@@ -1,0 +1,71 @@
+/* Global Styles */
+html,
+body {
+  	 
+  	  width: 100%;
+	  box-sizing: border-box;
+	  padding: 0;
+	  margin: 0;
+	}
+body {  font-family: arial;		
+		font-size: 14px;
+		background-color: #95fbee;
+		box-sizing: border-box;	
+		 		
+	  }	
+a{ text-decoration: none; }
+
+.clearFix{clear: all;}
+
+.container{ width: 1200px;
+			margin: auto;			
+			height: auto;
+		}
+
+/*-------------- Login Page Style ---------------*/
+
+#login, #signup{	width: 25%;
+					margin: auto;			
+					height: auto;			 
+					margin-top: 10%; 
+					border-radius: 15px;
+					box-shadow: 2px 2px 2px #076559;
+					background: #04b8a1;
+					padding-top: 2px;			
+					text-align: center;
+			}
+#login p,#signup p{   color: white; 
+					 font-weight: bold; 
+					 font-size: 20px;
+				 }
+.signup_box, .login_box{  
+							background: #fff;
+							border-radius: 0px 0px 15px 15px;
+							text-align: center;
+							padding: 20px 0px;
+						}
+.login_box input,.signup_box input{ padding: 8px 60px 8px 10px;				
+							   }
+							   
+.login_box label,.signup_box label{  margin-top: 15px;
+								 display: block;
+							}
+ .login_box  #btnSend,.signup_box  #btnSend{ background: #038675;
+										   color: white;
+										   border-radius: 6px;
+										   padding: 10px 30px;
+										   border: none;
+										   display: inline-block;
+										}
+.login_box  #btnSend:hover,.signup_box  #btnSend:hover{ background: #1d1d1d; 
+													  transition: 0.5s; 	
+													}
+ .login_box  #sign,.signup_box  #sign{  color: #038675;
+									  font-weight: bold;
+								  }
+.login_box  #sign:hover,.signup_box  #sign:hover{  color: #1d1d1d;
+										       	 transition: 0.5s; 	
+											  }
+.signup_box  datalist{ 
+					padding: 8px;	
+				}
