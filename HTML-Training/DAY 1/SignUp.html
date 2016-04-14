@@ -45,23 +45,26 @@
 		.signup_box{  
 					background: #fff;
 					border-radius: 0px 0px 15px 15px;
-					text-align: left;
+					text-align: center;
 					padding: 20px 20px;
 				}
+		.signup_box .gender{ font-weight: bold; 
+							 color:#044b79; 
+							 text-align: left;
+							 margin: 10px;
+							}		
 		.signup_box input{ padding: 8px 60px 8px 10px;				
 						   border: 1px solid #044b79;
 									   }
 									   
-		.signup_box label{  margin-top: 15px;
-							display: block;
-									}
+		 
 		.signup_box  #btnSend{ background: #044b79;
 							   color: white;
 							   border-radius: 6px;
 							   padding: 10px 30px;
 							   border: none;
 							   display: inline-block;
-							   margin: 20px 0px 0px 70px;
+							   margin: 20px 0px 0px 0px;
 							}
 		.signup_box  #btnSend:hover{ background: #1d1d1d; 
 									 transition: 0.5s; 	
@@ -87,7 +90,8 @@
 				<!-- Enter Email -->
 				<p><input type="email" id="email" placeholder="Enter Email Id"></p>		 						
 				<!-- Select Gender -->				
-				<p>	
+				<p class="gender">	
+					<label>Gender: </label>
 					<input type="radio" name="sex" value="male">Male
 					<input type="radio" name="sex" value="female">Female				
 				</p>	
