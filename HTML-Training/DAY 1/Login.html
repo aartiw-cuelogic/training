@@ -1,15 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="HTML,HTML5,Sementic">
     <title>HTML/HTML5-DAY1 - Login Page</title>    
 	<link href="css/style.css" rel="stylesheet">         
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>		   
+		<!---------------- Login/signout Page Style --------------->		 
+		body {  font-family: arial;		
+				font-size: 14px;
+				/*background-color: #53b6f7;*/
+				box-sizing: border-box;	
+				padding: 0;
+				margin: 0;						
+			  }	
+		a{ text-decoration: none; }
+		.clearFix{clear: both;}
+		.container{ width: 960px;
+					margin: auto;						
+				   }
+		ul{list-style-type: none; padding: 0px;}
+		
+		#login{				width: 25%;
+							margin: auto;			
+							height: auto;			 
+							margin-top: 10%; 
+							border-radius: 15px;
+							/*box-shadow: 2px 2px 2px #91cff7;*/
+							border: 2px solid #044b79;
+							background: #044b79;
+							padding-top: 2px;			
+							text-align: center;
+					}
+		#login p{  color: white; 
+				   font-weight: bold; 
+				   font-size: 20px;
+				}
+		.login_box{  
+					background: #fff;
+					border-radius: 0px 0px 15px 15px;
+					text-align: center;
+					padding: 20px 0px;
+				}
+		.login_box input{ padding: 8px 60px 8px 10px;				
+										border: 1px solid #044b79;
+									   }
+									   
+		.login_box label{  margin-top: 15px;
+						   display: block;
+									}
+		 .login_box  #btnSend{ background: #044b79;
+							   color: white;
+							   border-radius: 6px;
+							   padding: 10px 30px;
+							   border: none;
+							  display: inline-block;
+							}
+		.login_box  #btnSend:hover{ background: #1d1d1d; 
+								    transition: 0.5s; 	
+									}
+		.login_box  #sign {  color: #044b79;
+							 font-weight: bold;
+						 }
+		.login_box  #sign:hover{  color: #1d1d1d;
+								  transition: 0.5s; 	
+							  }		 
+	</style>
 </head>
-<body>
-    <!-- Login Form Starts Here --> 
+<body> 
+    <!-- Login Form Starts --> 
 	<section  id="login">	
 		<p> USER LOGIN</p>
 		<form class="login_box">			
@@ -21,6 +85,6 @@
 				<label><a href="signup.html" id="sign">SIGN UP HERE</a></label>
 		</form>			
 	</section>
-	<!-- Login Form Ends Here --> 
+	<!-- Login Form Ends --> 
 </body>
 </html>

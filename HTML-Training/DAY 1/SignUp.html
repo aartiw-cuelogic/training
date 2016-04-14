@@ -1,37 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="HTML,HTML5,Sementic">
     <title>HTML/HTML5-DAY1 - SignUp Page</title>    
 	<link href="css/style.css" rel="stylesheet">         
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>		   
+		<!---------------- Login/signout Page Style --------------->
+		body {  font-family: arial;		
+				font-size: 14px;
+				/*background-color: #53b6f7;*/
+				box-sizing: border-box;	
+				padding: 0;
+				margin: 0;						
+			  }	
+		a{ text-decoration: none; }
+		.clearFix{clear: both;}
+		.container{ width: 960px;
+					margin: auto;						
+				   }
+				   
+		ul{list-style-type: none; padding: 0px;}
+		
+		#signup{	width: 22%;
+							margin: auto;			
+							height: auto;			 
+							margin-top: 10%; 
+							border-radius: 15px;
+							/*box-shadow: 2px 2px 2px #91cff7;*/
+							border: 2px solid #044b79;
+							background: #044b79;
+							padding-top: 2px;			
+							text-align: center;
+					}
+		#signup>p{   color: white; 
+					 font-weight: bold; 
+					 font-size: 20px;
+				 }		
+		.signup_box{  
+					background: #fff;
+					border-radius: 0px 0px 15px 15px;
+					text-align: left;
+					padding: 20px 20px;
+				}
+		.signup_box input{ padding: 8px 60px 8px 10px;				
+						   border: 1px solid #044b79;
+									   }
+									   
+		.signup_box label{  margin-top: 15px;
+							display: block;
+									}
+		.signup_box  #btnSend{ background: #044b79;
+							   color: white;
+							   border-radius: 6px;
+							   padding: 10px 30px;
+							   border: none;
+							   display: inline-block;
+							   margin: 20px 0px 0px 70px;
+							}
+		.signup_box  #btnSend:hover{ background: #1d1d1d; 
+									 transition: 0.5s; 	
+															}
+		.signup_box  #sign{  color: #044b79;
+						     font-weight: bold;
+										  }
+		.signup_box  #sign:hover{  color: #1d1d1d;
+							       transition: 0.5s; 	
+							  }
+		.signup_box  datalist{ 		padding: 8px;	
+						     }
+	</style>
 </head>
 <body> 
-	<!-- SignUp Form Starts Here -->
-	
+	<!-- SignUp Form Starts -->	
 	<section id="signup">	
 		<p> SIGN UP FORM</p>
 		<form class="signup_box">			
+				<!-- Enter Name -->
 				<p><input type="text" id="uName" placeholder="Enter User Name"></p>		
-			    <p><input type="email" id="email" placeholder="Enter Email Id"></p>		 						
-				 
-				<p>
-					<input list="gender" placeholder="Select Gender">
-					<datalist id="gender">					 
-						  <option value="Male">
-						  <option value="Female">					  
-					</datalist>				
+			    
+				<!-- Enter Email -->
+				<p><input type="email" id="email" placeholder="Enter Email Id"></p>		 						
+				<!-- Select Gender -->				
+				<p>	
+					<input type="radio" name="sex" value="male">Male
+					<input type="radio" name="sex" value="female">Female				
 				</p>	
+				<!-- Enter Password -->
 				<p><input type="password" id="pwd" placeholder="Enter Password"></p>						
+				<!-- Confirm Password -->
 				<p><input type="password" id="Rpwd" placeholder="Re-Enter Password"></p>
-				<a href="Login.html" id="btnSend">SIGNUP</a>
-				<BR/> 
-				 
+				
+				<!-- SignUp Button -->
+				<p><a href="Login.html" id="btnSend">SIGN UP</a></p>
+				<BR/> 				 
 		</form>			
 	</section>
-	<!-- SignUp Form Ends Here -->
+	<!-- SignUp Form Ends -->
 
 </body>
 </html>
