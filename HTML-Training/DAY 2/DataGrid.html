@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     <meta name="description" content="HTML Assignments">
-    <meta name="keywords" content="HTML,HTML5,Sementic,non-sementic,blog">
-    <title>HTML/HTML5-DAY2 - Basic Blog Structure</title>    
+    <meta name="keywords" content="HTML,HTML5,Sementic,non-sementic,DataGrid">
+    <title>HTML/HTML5-DAY2 - DataGrid</title>    
 	<link href="css/style.css" rel="stylesheet">         
 	<!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	 
 </head>
 <body> 
-     <header>
-	 <div class="container">		
+    <header>
+	<div class="container">		
 			<a class="logo" href="index.html"></a>			
 			<ul class="navigation">
 				<li><a href="index.html">Home</a></li>
@@ -23,13 +23,309 @@
 				<div class="clearFix"></div>
 			</ul>
 			<div class="clearFix"></div>
-		</div><!-- Container Ends Here -->
+	</div><!-- Container Ends -->
 	</header><!-- Top Navigation End -->
 	
-	<section class="DataGrid"> <!-- Middle Section Starts -->
-		<div class="container">
-		 
+	<section class="DataGrid"> <!-- Datagrid Section Starts -->
+		<div class="container">	
+				<div class="table_grid"><!-- Table Grid Starts -->
+					<table width="100%" cellspacing="0"><!-- Table starts -->	
+						<caption> Data Grid - Table Structure </caption>	
+						<tr>
+						   <th>Roll No.</th>		
+						   <th>student name</th>		
+						   <th>Marks(%)</th>		
+						   <th>Grade</th>		
+						</tr>
+						<tr>
+						   <td>1</td>		
+						   <td>Marc</td>		
+						   <td>80</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>2</td>		
+						   <td>Nick</td>		
+						   <td>50</td>			
+						   <td>D</td>			
+						</tr>
+						<tr>
+						   <td>3</td>		
+						   <td>John</td>		
+						   <td>70</td>			
+						   <td>B</td>			
+						</tr>
+						<tr>
+						   <td>4</td>		
+						   <td>Milly</td>		
+						   <td>45</td>			
+						   <td>D</td>			
+						</tr>
+						<tr>
+						   <td>5</td>		
+						   <td>Joseph</td>		
+						   <td>40</td>			
+						   <td>D</td>			
+						</tr>
+						<tr>
+						   <td>6</td>		
+						   <td>Rubby</td>		
+						   <td>60</td>			
+						   <td>C</td>			
+						</tr>
+						<tr>
+						   <td>7</td>		
+						   <td>Rina</td>		
+						   <td>68</td>			
+						   <td>B</td>			
+						</tr>
+						<tr>
+						   <td>8</td>		
+						   <td>Juimmy</td>		
+						   <td>90</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>9</td>		
+						   <td>Johnson</td>		
+						   <td>58</td>			
+						   <td>C</td>			
+						</tr>
+						<tr>
+						   <td>10</td>		
+						   <td>Rick</td>		
+						   <td>89</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>11</td>		
+						   <td>Sara</td>		
+						   <td>78</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>12</td>		
+						   <td>Taz</td>		
+						   <td>91</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>13</td>		
+						   <td>Monika</td>		
+						   <td>54</td>			
+						   <td>D</td>			
+						</tr>
+						<tr>
+						   <td>14</td>		
+						   <td>Maria</td>		
+						   <td>62</td>			
+						   <td>C</td>			
+						</tr>
+						<tr>
+						   <td>15</td>		
+						   <td>Rihan</td>		
+						   <td>73</td>			
+						   <td>B</td>			
+						</tr>
+						<tr>
+						   <td>16</td>		
+						   <td>Michell</td>		
+						   <td>81</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>17</td>		
+						   <td>Riyaz</td>		
+						   <td>59</td>			
+						   <td>C</td>			
+						</tr>
+						<tr>
+						   <td>18</td>		
+						   <td>Vicky</td>		
+						   <td>44</td>			
+						   <td>D</td>			
+						</tr>
+						<tr>
+						   <td>19</td>		
+						   <td>Scarlett</td>		
+						   <td>96</td>			
+						   <td>A</td>			
+						</tr>
+						<tr>
+						   <td>20</td>		
+						   <td>Philip</td>		
+						   <td>47</td>			
+						   <td>D</td>			
+						</tr>
+					</table><!-- Table Ends -->
+				</div><!-- Table Grid Ends -->	
+
+				<div class="List_grid"><!-- List Grid Starts -->
+					<div class="list_head">	
+						 Data Grid - List Structure 
+					</div>					
+					<div class="listView">							
+						<ul>
+						   <li class="heading">Roll No.</li>		
+						   <li class="heading">student name</li>		
+						   <li class="heading">Marks(%)</li>		
+						   <li class="heading">Grade</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- First Heading List Row Ends -->						
+						<ul>
+						   <li>1</li>		
+						   <li>Marc</li>		
+						   <li>80</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- First List Row Ends -->
+						<ul>
+						   <li>2</li>		
+						   <li>John</li>		
+						   <li>50</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- Second List Row Ends -->
+						<ul>
+						   <li>3</li>		
+						   <li>Milly</li>		
+						   <li>70</li>		
+						   <li>B</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- Third List Row Ends -->
+						<ul>
+						   <li>4</li>		
+						   <li>Joseph</li>		
+						   <li>45</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 4th List Row Ends -->
+						<ul>
+						   <li>5</li>		
+						   <li>Rubby</li>		
+						   <li>40</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 5th List Row Ends -->
+						<ul>
+						   <li>6</li>		
+						   <li>Rina</li>		
+						   <li>60</li>		
+						   <li>C</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 6th List Row Ends -->
+						<ul>
+						   <li>7</li>		
+						   <li>Jimmy</li>		
+						   <li>68</li>		
+						   <li>B</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 7th List Row Ends -->
+						<ul>
+						   <li>8</li>		
+						   <li>Johnson</li>		
+						   <li>90</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 8th List Row Ends -->
+						<ul>
+						   <li>9</li>		
+						   <li>Rick</li>		
+						   <li>58</li>		
+						   <li>C</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 9th List Row Ends -->
+						<ul>
+						   <li>10</li>		
+						   <li>Sara</li>		
+						   <li>89</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 10th List Row Ends -->
+						<ul>
+						   <li>11</li>		
+						   <li>Taz</li>		
+						   <li>78</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 11th List Row Ends -->
+						<ul>
+						   <li>12</li>		
+						   <li>Monica</li>		
+						   <li>91</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 12th List Row Ends -->
+						<ul>
+						   <li>13</li>		
+						   <li>Maria</li>		
+						   <li>54</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 13th List Row Ends -->
+						<ul>
+						   <li>14</li>		
+						   <li>Rihan</li>		
+						   <li>62</li>		
+						   <li>C</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 14th List Row Ends -->
+						<ul>
+						   <li>15</li>		
+						   <li>Michell</li>		
+						   <li>73</li>		
+						   <li>B</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 15th List Row Ends -->
+						<ul>
+						   <li>16</li>		
+						   <li>Riyaz</li>		
+						   <li>81</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 16th List Row Ends -->
+						<ul>
+						   <li>17</li>		
+						   <li>Vicky</li>		
+						   <li>59</li>		
+						   <li>C</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 17th List Row Ends -->
+						<ul>
+						   <li>18</li>		
+						   <li>Scarlett</li>		
+						   <li>44</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 18th List Row Ends -->
+						<ul>
+						   <li>19</li>		
+						   <li>Philip</li>		
+						   <li>96</li>		
+						   <li>A</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 19th List Row Ends -->
+						<ul>
+						   <li>20</li>		
+						   <li>Nick</li>		
+						   <li>47</li>		
+						   <li>D</li>
+						   <div class="clearFix"></div>						   
+					    </ul><!-- 20th List Row Ends -->
+				   </div><!-- List View Ends -->	
+				</div><!-- List Grid Ends -->	
+				
 		</div><!-- Container End -->
-	</footer><!-- Footer End -->	 
+	</section><!-- DataGrid Ends -->	
+	
+	<footer>
+		<div class="container">
+			<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+			</ul>
+		</div><!-- Container End -->
+	</footer><!-- Footer End --> 
 </body>
 </html>
