@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">	
-    <meta name="description" content="">
-    <meta name="keywords" content="HTML,HTML5,Sementic">
-    <title>HTML/HTML5-DAY1 - contact Page</title>    
+    <meta name="description" content="HTML Assignments">
+    <meta name="keywords" content="HTML,HTML5,Sementic,nonsementic,form elements">
+    <title>HTML/HTML5-DAY3 - ContactUs Page</title>    
 	<link href="css/style.css" rel="stylesheet">         
 	<!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,8 +17,8 @@
 			<a class="logo" href="index.html"></a>			
 			<ul class="navigation">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="Blog.html">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+					<li><a href="iFrame.html">Blog</a></li>
+				<li><a href="Contact_us.html">Contact</a></li>
 				<li><a href="Login.html" id="btnSignOut">Sign Out</a></li>			
 				<div class="clearFix"></div>
 			</ul>
@@ -33,16 +33,24 @@
 	<form class="contact_box">	
 		
 				<!-- Enter First Name -->
-				<p><input type="text" id="fName" pattern="[a-zA-Z]+" placeholder="Enter First Name" required autofocus title="No Numeric value and special characters accepted"></p>		
+				<p>
+					<input type="text" id="fName" pattern="[a-zA-Z]+" placeholder="Enter First Name" required autofocus title="No Numeric value and special characters accepted">
+				</p>		
 			    
 				<!-- Enter Last Name -->
-				<p><input type="text" id="lName" pattern="[a-zA-Z]+" placeholder="Enter Last Name" required title="No Numeric value and special characters accepted"></p>
+				<p>
+					<input type="text" id="lName" pattern="[a-zA-Z]+" placeholder="Enter Last Name" required title="No Numeric value and special characters accepted">
+				</p>
 				
 				<!-- Enter Email -->
-				<p><input type="email" id="email" placeholder="Enter Email Id" autocomplete="on" required></p>		 						
+				<p>
+					<input type="email" id="email" placeholder="Enter Email Id" autocomplete="on" required>
+				</p>		 						
 
 				<!-- Enter our phone number -->
-				<input type="text" name="Phone Number" placeholder="Enter Phone Number" pattern="[7-9]{1}[0-9]{9}" title="Phone number with first digit between 7-9 and remaing 9 digit with 0-9">
+				<p>
+					<input type="text" name="Phone Number" placeholder="Enter Phone Number"  pattern="[7-9]{1}[0-9]{9}" title="Phone number with first digit between 7-9 and remaing 9 digit with 0-9" required>
+				</p>	
 				
 				<!-- Select Gender -->				
 				<p class="gender">	
@@ -52,15 +60,18 @@
 				</p>	
 				
 				<!-- Enter Enquiry Details -->
-				<p><textarea id="enquiry" placeholder=" -- Enter your query here --"  maxlength="140" cols="37" rows="5" required></textarea>				
+				<p>
+					<textarea id="enquiry" placeholder=" -- Enter your query here --"  maxlength="140" cols="37" rows="5" required></textarea>				
 				</p>	
 				
 				<!-- Submit Button -->
-				<p><input type="submit" id="btnSend" value="SUBMIT" formvalidate></p>
+				<p>
+					<input type="submit" id="btnSend" value="SUBMIT" formvalidate>
+			  </p>
 				 			 
-		</form>			
+		</form>		
 	</section>
-	<!-- SignUp Form Ends -->
+	<!-- ./Contact us form ends -->		
 	
 	<footer>
 		<div class="container">
@@ -69,6 +80,7 @@
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Contact</a></li>
 			</ul>
+			<div class="clearFix"></div>
 		</div><!-- Container End -->
 	</footer><!-- Footer End -->
 </body>
