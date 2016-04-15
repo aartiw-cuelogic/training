@@ -51,6 +51,7 @@ header .navigation li #btnSignOut{  background: #1d1d1d;
 								color: white;
 								padding: 8px 20px;
 								border-radius: 5px;
+								-webkit-border-radius: 5px;								
 								margin-left: 20px;
 							 }
 header .navigation li #btnSignOut:hover{ text-decoration: underline;
@@ -118,11 +119,12 @@ header .navigation li #btnSignOut:hover{ text-decoration: underline;
 							  
 /*-------- Contact Us -------------*/ 
 		
-#contact{	width: 32%;
+#contact{	width: 400px;
 			margin: auto;			
 			height: auto;			 
-			margin-top: 2%; 
-			border-radius: 15px;							
+			margin-top: 1%; 
+			border-radius: 15px;										
+			-webkit-border-radius: 15px;
 			border: 2px solid #044b79;
 			background: #044b79;
 			padding-top: 1px;			
@@ -132,24 +134,30 @@ header .navigation li #btnSignOut:hover{ text-decoration: underline;
 			  font-weight: bold; 
 			  font-size: 25px;
 		 }		
-.contact_box{  
+.contact_box{  position: relative;
 			   background: #fff;
 			   border-radius: 0px 0px 15px 15px;
+			   -webkit-border-radius:  0px 0px 15px 15px;
 			   text-align: center;
-			   padding: 20px 20px;
-		}
+			   padding: 10px 20px;
+			} 
+.contact_box  .wrapper li{position: relative; width: 100%; margin-top: 15px;}
 .contact_box .gender{ font-weight: bold; 
 					 color:#044b79; 
 					 text-align: left;
-					 margin: 10px 54px;
+					 margin: 10px 0px;
 					}		
-.contact_box input{ padding: 8px 100px 8px 10px;				
+.contact_box input{ padding: 8px 180px 8px 10px;				
 				  border: 1px solid #044b79;
 				  }
-		 
+.contact_box  input[type="textarea"]{ height: 100px; padding-top: 0px;}
+.contact_box label{ padding: 8px 100px 8px 10px;				
+				  display: block;
+				}		 
 .contact_box  #btnSend{ background: #044b79;
 					   color: white;
 					   border-radius: 6px;
+					   -webkit-border-radius: 6px;
 					   padding: 10px 30px;
 					   border: none;
 					   display: inline-block;

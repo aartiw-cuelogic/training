@@ -31,44 +31,44 @@
 	<p> CONTACT US </p>
 	
 	<form class="contact_box">	
-		
-				<!-- Enter First Name -->
-				<p>
-					<input type="text" id="fName" pattern="[a-zA-Z]+" placeholder="Enter First Name" required autofocus title="No Numeric value and special characters accepted">
-				</p>		
-			    
-				<!-- Enter Last Name -->
-				<p>
-					<input type="text" id="lName" pattern="[a-zA-Z]+" placeholder="Enter Last Name" required title="No Numeric value and special characters accepted">
-				</p>
-				
-				<!-- Enter Email -->
-				<p>
-					<input type="email" id="email" placeholder="Enter Email Id" autocomplete="on" required>
-				</p>		 						
+			
+				<ul class="wrapper">
+					<!-- Enter First Name -->
+					<li>
+						<input type="text" id="fName" pattern="[a-zA-Z]+" placeholder="Enter First Name" required autofocus title="No Numeric value and special characters accepted">
+					</li>		
+					
+					<!-- Enter Last Name -->
+					<li>
+						<input type="text" id="lName" pattern="[a-zA-Z]+" placeholder="Enter Last Name" required title="No Numeric value and special characters accepted">
+					</li>
+					
+					<!-- Enter Email -->
+					<li>
+						<input type="email" id="email" placeholder="Enter Email Id" autocomplete="on" required>
+					</li>		 						
 
-				<!-- Enter our phone number -->
-				<p>
-					<input type="text" name="Phone Number" placeholder="Enter Phone Number"  pattern="[7-9]{1}[0-9]{9}" title="Phone number with first digit between 7-9 and remaing 9 digit with 0-9" required>
-				</p>	
-				
-				<!-- Select Gender -->				
-				<p class="gender">	
-					<label>Gender: </label>
-					<input type="radio" name="sex" value="male" checked="checked">Male
-					<input type="radio" name="sex" value="female">Female				
-				</p>	
-				
-				<!-- Enter Enquiry Details -->
-				<p>
-					<textarea id="enquiry" placeholder=" -- Enter your query here --"  maxlength="140" cols="37" rows="5" required></textarea>				
-				</p>	
-				
-				<!-- Submit Button -->
-				<p>
-					<input type="submit" id="btnSend" value="SUBMIT" formvalidate>
-			  </p>
-				 			 
+					<!-- Enter our phone number -->
+					<li>
+						<input type="text" name="Phone Number" placeholder="Enter Phone Number"  pattern="[7-9]{1}[0-9]{9}" title="Phone number with first digit between 7-9 and remaing 9 digit with 0-9" required>
+					</li>
+					
+					<!-- Select Gender -->				
+					<li class="gender">	
+						Gender:		<input type="radio" name="sex" value="male" checked="checked">Male
+						<input type="radio" name="sex" value="female">Female				
+					</li>	
+					
+					<!-- Enter Enquiry Details -->
+					<li>
+						<input type="textarea" id="enquiry" placeholder=" -- Enter your query here --"  maxlength="140" cols="37" rows="5" required>			
+					</li>	
+					
+					<!-- Submit Button -->
+					<li>
+						<input type="submit" id="btnSend" value="SUBMIT" formvalidate>
+					</li>
+			    </ul><!-- /.Wrapper -->	 			 
 		</form>		
 	</section>
 	<!-- ./Contact us form ends -->		
