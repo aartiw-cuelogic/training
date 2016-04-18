@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,HTML5,Sementic">
+    <title>HTML/HTML5-DAY1 - Home Page</title>    
+	<link href="css/style.css" rel="stylesheet">         
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+	<style>
+			
+	<!---------------- Home Page --------------->
+	body {  font-family: arial;		
+			font-size: 14px;
+			/*background-color: #53b6f7;*/
+			box-sizing: border-box;	
+			padding: 0;
+			margin: 0;					
+		  }	
+	a{ text-decoration: none; }
+	.clearFix{clear: both;}
+	.container{ width: 960px;
+				margin: auto;						
+			   }			   
+	ul{list-style-type: none; padding: 0px;}
+	header{ padding: 20px;
+			background: #fff;
+			height: auto;
+		   }
+	header .logo{  height: 55px;
+				   width: 250px;
+				   float: left;
+				   background: url('images/cuelogic_logo.png') no-repeat;
+				}
+	header .navigation{ float: right;					   
+					 }
+	header .navigation li{ float: left;
+						margin-left: 20px;
+						}
+	header .navigation li a{  padding: 15px 20px;
+						  color: #1d1d1d;
+						  text-transform: uppercase;
+						}
+	header .navigation li a:hover{  background-color: #0070ba;
+								color: white;
+								transition: 0.6s;	
+							}
+	header .navigation li #btnSignOut{  background: #1d1d1d; 
+									 color: white;
+									 padding: 8px 20px;
+									 border-radius: 5px;
+									 margin-left: 20px;
+								 }
+	header .navigation li #btnSignOut:hover{ text-decoration: underline;
+										  transition: 0.8s;									  
+										}
+
+	.banner .container{ height: 360px;
+					   width: 960px;				   
+					   background: url('images/banner_04.png') no-repeat;
+					   }
+	.middle {margin-top: 50px;}
+	.middle ul li{ width: 260px;
+				float: left;
+				margin-left: 30px;
+				text-align: center;
+				line-height: 20px;
+				background-color: #0070ba;
+				color: white;
+				padding: 20px;
+				cursor: pointer;
+				}
+	.middle ul li:first-child{margin-left: 0px;}
+	.middle ul li:hover{ color: #fff;
+					  background: #30a7f6;
+					  transition: 0.8s;
+					  }
+	footer .container{ margin-top: 50px;
+					 background:#000;
+					 padding:10px 20px;
+					 box-sizing: border-box;
+					}
+	footer .container li {margin-top: 10px;}
+	footer .container li a{color: white;}
+	footer .container li a:hover{text-decoration: underline;}
+</style>
+</head>
+<body> 
+     <header>
+	 <div class="container">		
+			<a class="logo" href="Index.html"></a>			
+			<ul class="navigation">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="iFrame.html">Blog</a></li>
+				<li><a href="Contact_us.html">Contact</a></li>
+				<li><a href="Login.html" id="btnSignOut">Sign Out</a></li>			
+				<div class="clearFix"></div>
+			</ul>
+			<div class="clearFix"></div>
+		</div><!-- Container Ends Here -->
+	</header><!-- Top Navigation End -->
+	
+	<div class="banner">	
+		<div class="container">
+		</div>
+	</div>	<!-- Banner End -->
+	
+	<div class="middle"><!-- Middle Section Starts -->	
+		<div class="container">
+			<ul>
+				<li>
+					<img src="images/tile1.png">
+					<h3> WEB APPLICATION </h3>
+						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+							when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						 </p>		
+				</li><!-- /.First Thumnail -->
+				<li>
+					<img src="images/tile2.png">
+					<h3> MOBILE APPLICATION </h3>
+						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+							when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						 </p>		
+				</li><!-- /.Second Thumnail -->
+				<li>
+					<img src="images/tile3.png">
+					<h3> CLOUD COMPUTING </h3>
+						 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+							when an unknown printer took a galley of type and scrambled it to make a type specimen book.							
+						 </p>	
+				</li><!-- /.Third Thumnail -->				
+				<div class="clearFix"></div>
+			</ul>
+		</div> <!-- Container End -->
+	</div>	<!-- Middle Section End -->
+	
+	<footer>
+		<div class="container">
+			<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="clearFix"></div>
+		</div><!-- Container End -->
+	</footer><!-- Footer End -->
+	 
+</body>
+</html>

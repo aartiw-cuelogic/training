@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">	
+    <meta name="description" content="HTML Assignments">
+    <meta name="keywords" content="HTML,HTML5,Sementic,non-sementic,iFrame,video,audio,canvac,email-template">
+    <title>HTML/HTML5-DAY4 - Video/Audio/Canvas</title>    
+	<link href="css/style.css" rel="stylesheet">         
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	 
+</head>
+<body>     	
+	<div class="container"><!-- Blog Title Starts /.Fixed to top-->
+		<div class="bg_tile">
+			BLOG TITLE
+		</div>
+	</div><!-- Blog Title End-->
+	
+	<section class="middle"> <!-- Middle Section Starts -->
+		<div class="container">
+			
+			<aside>	<!-- Left Side links Starts -->
+				<h2>Quick Links</h2>
+				<ul>
+					<li><a href="#"> Sub Nav Link 1 </a></li>
+					<li><a href="#"> Sub Nav Link 2 </a></li>
+					<li><a href="#"> Sub Nav Link 3 </a></li>
+					<li><a href="#"> Sub Nav Link 4 </a></li>
+					<li><a href="#"> Sub Nav Link 5 </a></li>
+				</ul>	
+				
+				<!-- Audio Starts-->
+				<h2> Audio Blog </h2>
+				<audio controls class="audio_player">
+					<source src="http://xseignard.github.com/webGLWebAudioAPI/sound/OGLikeCapone.ogg" type="audio/ogg"></source>
+					<p>Your browser does not support audio.</p>
+				</audio>
+				<!-- Audio Ends -->	
+				
+				<!-- iFrame Video Starts -->
+				<h2> Video Iframe Blog </h2>
+				<iframe src="video/Clip.mp4" frameborder="0" border="0" scrolling="no">				
+					<p>Your browser does not support video.</p>
+				</iframe>
+				<!-- iFrame Video Ends -->
+				
+			</aside><!-- Left Side links End -->	
+		
+			<div class="grid"><!-- Right Thumbnail Blog Starts -->
+			<div>
+					<ul class="thumbnail">						
+						<li><!-- Video Blog -->							
+							<video width="300" height="300" controls autoplay poster="images/Blog1.png" loop unmuted> 							
+								<source src="video/Clip.mp4" type="video/mp4">	
+							</video>		
+						</li><!-- Video Blog Ends-->							
+						<li>
+							<div class="box"></div>														
+							<img src="images/Blog2.png" alt="blog2"> 														
+						</li>
+						<li>
+							<div class="box"></div>								
+							<img src="images/Blog3.png" alt="blog3"> 							
+						</li>
+						<li>
+							<div class="box"></div>								 
+							<img src="images/Blog4.png" alt="blog4">
+						</li>
+					</ul>					
+					<div class="clearFix"></div>					
+				</div>
+			</div>	<!-- Right Thumbnail Blog End-->		
+			<div class="clearFix"></div>			
+			
+		</div><!-- container Ends -->
+	</section><!-- Middle Section Ends -->	
+	
+	<footer><!-- Footer Starts -->
+		<div class="container"><!-- Container Starts -->
+			<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+			</ul>			
+			<p><!-- HTML Page Validator -->
+				<a href="https://validator.w3.org/nu/#file" target="_blank">	  
+					<img  src="http://www.w3.org/Icons/valid-html401.png" alt="w3.org validator"/>
+				</a>
+			</p>				
+		<div class="clearFix"></div>		
+		</div><!-- Container End -->
+	</footer><!-- Footer End -->	
+	
+</body>
+</html>
